@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroundlauncher" />
+
+    <Button
+        android:id="@+id/btnHelloWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnHelloWorld"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="@string/project_hello"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnProjectCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnCount"
+        android:layout_below="@+id/btnHelloWorld"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/project_count"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnProjectSianida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnSianida"
+        android:layout_below="@+id/btnProjectCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/project_sianida"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnTwoActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnTwoActivity"
+        android:layout_below="@+id/btnProjectSianida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/project_fibonacci"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnSetAlarm"
+        android:layout_below="@+id/btnTwoActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/project_set_alarm"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnToast"
+        android:layout_below="@+id/btnTwoActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/project_twoact"
+        tools:ignore="UsingOnClickInXml" />
+</RelativeLayout>
